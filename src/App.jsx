@@ -110,7 +110,7 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="header-content">
-          <img src="/images/logobronx.png" alt="Bronx 04 Logo" className="logo-image" />
+          <img src="images/logobronx.png" alt="Bronx 04 Logo" className="logo-image" />
           <h1>BRONX 04</h1>
         </div>
         <p className="tagline">El Freestyle de Heredia</p>
