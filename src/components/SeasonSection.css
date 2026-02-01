@@ -1,0 +1,121 @@
+.season-section {
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);
+}
+
+.season-section:hover {
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.2);
+  border-color: #ffd700;
+}
+
+.season-section.expanded {
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.season-header {
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.season-header:hover {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.season-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #d4af37;
+  text-align: left;
+  flex: 1;
+  letter-spacing: 1px;
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  color: #d4af37;
+  transition: transform 0.3s ease;
+  margin-left: 1rem;
+}
+
+.season-section.expanded .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.season-content {
+  padding: 2rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin: 0 0 2rem 0;
+  text-align: justify;
+}
+
+.champions-section {
+  margin-top: 2rem;
+}
+
+.champions-section h3 {
+  font-size: 1.4rem;
+  color: #ffd700;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.champions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .season-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .season-content {
+    padding: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .champion-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .champion-number {
+    min-width: 100%;
+    margin: 0 0 0.5rem 0;
+  }
+}
