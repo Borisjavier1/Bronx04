@@ -1,8 +1,16 @@
 import { useState } from 'react'
 import './ChampionCard.css'
+import ImageCarousel from './ImageCarousel'
 
 function ChampionCard({ champion, position }) {
   const [isExpanded, setIsExpanded] = useState(false)
+
+  // Normalizar las imágenes: convertir image singular a array images
+  const images = champion.images 
+    ? champion.images 
+    : champion.image 
+      ? [champion.image]
+      : []
 
   return (
     <div className={`champion-card champion-position-${position}`}>
@@ -15,13 +23,7 @@ function ChampionCard({ champion, position }) {
         <div className="champion-details">
           <p className="champion-date">{champion.date}</p>
           <p className="champion-description">{champion.description}</p>
-          <div className="champion-image-container">
-            <img 
-              src={champion.image} 
-              alt={champion.name} 
-              className="champion-image"
-            />
-          </div>
+          <ImageCarousel images={images} />
         </div>
       )}
     </div>

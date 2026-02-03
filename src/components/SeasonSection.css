@@ -95,6 +95,68 @@
   gap: 0.8rem;
 }
 
+.scoreboard-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #d4af37;
+}
+
+.scoreboard-header {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  background: linear-gradient(90deg, rgba(255, 107, 107, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.scoreboard-header:hover {
+  background: linear-gradient(90deg, rgba(255, 107, 107, 0.2) 0%, rgba(0, 0, 0, 0.3) 100%);
+  border-color: rgba(255, 107, 107, 0.5);
+}
+
+.scoreboard-header h3 {
+  font-size: 1.4rem;
+  color: #ff6b6b;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  flex: 1;
+  text-align: left;
+}
+
+.scoreboard-toggle {
+  font-size: 1.1rem;
+  color: #ff6b6b;
+  transition: transform 0.3s ease;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.scoreboard-header.expanded .scoreboard-toggle {
+  transform: rotate(180deg);
+}
+
+.scoreboard-content {
+  padding: 1.5rem;
+  margin-top: 1rem;
+  background: rgba(255, 107, 107, 0.05);
+  border-radius: 6px;
+  animation: slideDown 0.3s ease;
+}
+
+.scoreboard-description {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
 @media (max-width: 768px) {
   .season-header h2 {
     font-size: 1.4rem;
