@@ -20,7 +20,7 @@ function App() {
       description: 'La primera temporada oficial iniciada en 2022 y hasta 2023, con formato mejorado y más participantes. En esta temporada el nombre de Bronx empezó a tomar fuerza y se convirtió en el futuro y esperanza del rap en Heredia.',
       scoreboard: {
         title: 'Tabla de Puntos',
-        description: 'Registro de puntuaciones y desempeño acumulado durante toda la temporada. Incluye el ranking final y el MVP de la temporada.',
+        description: 'La tabla de la primera temporada contó con 82 competidores y el MVP fue ABC dejando a Low C en segundo lugar.',
         images: ['images/tablas/t1.jpg', 'images/tablas/mvp1.jpg']
       },
       champions: [
@@ -43,24 +43,28 @@ function App() {
     {
       id: 'season2',
       title: 'Temporada 2',
-      description: 'Continuamos con mayor proyección y reconocimiento nacional. Las batallas se tornaron más competitivas y el nivel de los freestylers alcanzó nuevas alturas.',
+      description: 'La tabla de la primera temporada contó con 107 competidores y el MVP fue Sebastián dejando una gran diferencia frente a ABC como segundo lugar.',
       scoreboard: {
         title: 'Tabla de Puntos',
         description: 'Registro de puntuaciones y desempeño acumulado durante toda la temporada. Incluye el ranking final y el MVP de la temporada.',
-        images: ['images/s2-scoreboard1.jpg', 'images/s2-scoreboard2.jpg']
+        images: ['images/tablas/t2.jpg', 'images/tablas/mvp2.jpg']
       },
       champions: [
-        { name: '1', date: '2022', description: 'Ganador', image: 'images/s2-1.jpg' },
-        { name: '2', date: '2022', description: 'Participante', image: 'images/s2-2.jpg' },
-        { name: '3', date: '2022', description: 'Participante', image: 'images/s2-3.jpg' },
-        { name: '4', date: '2022', description: 'Participante', image: 'images/s2-4.jpg' },
-        { name: '5', date: '2022', description: 'Participante', image: 'images/s2-5.jpg' },
-        { name: '6', date: '2022', description: 'Participante', image: 'images/s2-6.jpg' },
-        { name: '7', date: '2022', description: 'Participante', image: 'images/s2-7.jpg' },
-        { name: '8', date: '2022', description: 'Participante', image: 'images/s2-8.jpg' },
-        { name: '9', date: '2022', description: 'Participante', image: 'images/s2-9.jpg' },
-        { name: '10', date: '2022', description: 'Participante', image: 'images/s2-10.jpg' },
-        { name: '11', date: '2022', description: 'Participante', image: 'images/s2-11.jpg' }
+        { name: 'Fecha #1: Lozz', date: '12-01-24', description: 'Lozz abrió el marcador de la segunda temporada derrotando a Jaffet en la final y reafirmando porque era el campeón nacional.', image: 'images/temp2/s2-1.jpg' },
+        { name: 'Fecha #2: Elian', date: '16-02-24', description: 'Elian dio sorpresa tras derrotar a PST en la final de la segunda fecha, la primer gran estrella para Pérez Zeledón', image: 'images/temp2/s2-2.jpg' },
+        { name: 'Fecha #3: Guido', date: '23-03-24', description: 'Guido ya consolidado como los más fuertes del país se queda con la tercera fecha tras vencer a Bragi en la final.', image: 'images/temp2/s2-3.jpg' },
+        { name: 'Fecha #4: Kenyari & LTF', date: '19-04-24', description: 'Las duplas de la temporada 2 dan un resultado de LTF y Kenyari como ganadores ante Sebastián y Nilo. En esta fecha despedimos a Kenyari quien iba a representar Costa Rica en BDM internacional.', image: 'images/temp2/s2-4.jpg' },
+        { name: 'Fecha #5: Sebastián', date: '10-05-24', description: 'Sebastián gana la fecha 5 contra Lozz tras una rigida batalla.', image: 'images/temp2/s2-5.jpg' },
+        { name: 'Fecha #6: Gabriel', date: '15-06-24', description: 'Gabriel fue el primer extranjero en ganar Bronx, tras vencer a ABC en la final. Gabriel se llevó a su tierra Panamá este triunfo', image: 'images/temp2/s2-6.jpg' },
+        { name: 'Fecha #7: Sebastián', date: '12-07-24', description: 'Sebastián se declara el primer bicampeón de la temporada 2 tras derrotar a ABC en la fecha 7.', image: 'images/temp2/s2-7.jpg' },
+        { name: 'Fecha #8: ABC & G', date: '23-08-24', description: 'Esta fecha con formato Several Mode fue conquistada por ABC y G tras vencer a M00syx en la final. Ambos no habian logrado campeonatos esta temporada a pesar de tener buenos resultados la temporada previa.', image: 'images/temp2/s2-8.jpg' },
+        { name: 'Fecha #9: Alvarado', date: '28-09-24', description: 'Alvarado se impuso en esta fecha tras vencer a ABC en la final. Un rapero con muchos años de experiencia en batalla regresó para dejar un campeonato más.', image: 'images/temp2/s2-9.jpg' },
+        { name: 'Fecha #10: G', date: '19-10-24', description: 'G logra ganarle a Lozz en esta fecha y vuelve a ganar una Bronx en solitario tras varios intentos.', image: 'images/temp2/s2-10.jpg' },
+        { name: 'Fecha Regional Cartago: Lozz', date: '04-03-24', description: 'Lozz ganó la regional de Cartago tras vencer a Nilo en la final, al estar Lozz clasificado a la nacional de la segunda temporada, el clasificado fue Nilo.', image: 'images/temp2/s2-c.jpg' },
+        { name: 'Fecha Regional San José: Kenyari', date: '20-05-24', description: 'Kenyari clasificó a la nacional de Bronx tras vencer a Sebastián en la final en la regional de San José, siendo de Limón.', image: 'images/temp2/s2-s.jpg' },
+        { name: 'Fecha Regional Alajuela: Sebastián', date: '10-11-24', description: 'Sebastián ganó la regional de Alajuela tras haber cerrado la liga. Al haber sido MVP estaba indiscutiblemente clasificado a la nacional, por lo que el clasificado en esta fecha fue el otro finalista: Deinsha.', image: 'images/temp2/s2-a.jpg' },
+        { name: 'Fecha Regional Heredia: ABC', date: '23-11-24', description: 'El llamado "Last Bullet" fue la última oportunidad para clasificar a la nacional. Para ABC fue su ultimo chance de quedar campeón esta temporada, efectivamente lo logró porque se impuso ante Recom en la final.', image: 'images/temp2/s2-11.jpg' },
+        { name: 'Campeón Nacional: Kenyari', date: '16-12-24', description: 'Kenyari se consolida como el campeón nacional de la segunda temporada tras vencer a PST en la final. Kenyari ya reconocido como uno de los mejores freestylers de Costa Rica escribió su nombre en la historia de Bronx 04.', image: 'images/temp2/s2-12.jpg' }
       ]
     },
     {
@@ -112,6 +116,18 @@ function App() {
      {
       id: 'sr',
       title: 'Bronx SR',
+      description: 'Bronx se une al CPJ SRH tras una invitación para realizar clasificatorias al rededor de San Rafael de Heredia, donde uno solo seria el campeón.',
+      champions: [
+        { name: 'Clasificatoria #1 - Jaffet', date: '07-05-23', description: 'Jaffet ganó la primera clasificatoria de Bronx SR derrotando a un Peggs que recien inicaba su carrera.', image: 'images/sanra/ss1-1.jpg' },
+        { name: 'Clasificatoria #3 - G', date: '03-06-23', description: 'G vence a Rincón en la final y se lleva la segunda clasificatoria.', image: 'images/sanra/ss1-2.jpg' },
+        { name: 'Clasificatoria #2 - G', date: '09-07-23', description: 'G marca su superioridad en estas clasificatorias y gana la tercera tras derrotar a RVS en la final. Regalándonos un duelo historico de campeones de Red Bull Costa Rica. ', image: 'images/sanra/ss1-3.png' },
+        { name: 'Clasificatoria #4 - G', date: '08-10-23', description: 'G nuevamente consigue ganar la clasificatoria esta vez derrotando a Lozz en la final', image: 'images/sanra/ss1-4.png' },
+        { name: 'Final SR - Sebastián', date: '29-10-23', description: 'Sebastián gana la final de Bronx SR derrotando a Lozz en la gran final ganando el privilegio de presentarse antes del cantante Toledo en su siguiente concierto en San Rafael.', image: 'images/sanra/ss1-5.jpg' }
+      ]
+    },
+     {
+      id: 'sr',
+      title: 'Promesa del Under',
       description: 'Bronx se une al CPJ SRH tras una invitación para realizar clasificatorias al rededor de San Rafael de Heredia, donde uno solo seria el campeón.',
       champions: [
         { name: 'Clasificatoria #1 - Jaffet', date: '07-05-23', description: 'Jaffet ganó la primera clasificatoria de Bronx SR derrotando a un Peggs que recien inicaba su carrera.', image: 'images/sanra/ss1-1.jpg' },

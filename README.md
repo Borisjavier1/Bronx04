@@ -37,6 +37,11 @@ La aplicación se abrirá automáticamente en `http://localhost:3000`
 npm run build
 ```
 
+## Deploy para gh pages
+
+```bash
+npm run deploy
+```
 Esto generará los archivos optimizados en la carpeta `dist/`.
 
 ## Hosting Gratuito
