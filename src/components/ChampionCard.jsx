@@ -21,7 +21,9 @@ function ChampionCard({ champion, position }) {
 
       {isExpanded && (
         <div className="champion-details">
-          <p className="champion-date">{champion.date}</p>
+          {champion.date && (
+            <p className="champion-date">Fecha de publicación: {champion.date}</p>
+          )}
           <p className="champion-description">{champion.description}</p>
           <ImageCarousel images={images} />
         </div>

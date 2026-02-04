@@ -43,10 +43,10 @@ function App() {
     {
       id: 'season2',
       title: 'Temporada 2',
-      description: 'La tabla de la primera temporada contó con 107 competidores y el MVP fue Sebastián dejando una gran diferencia frente a ABC como segundo lugar.',
+      description: 'Bronx arrancó su segunda temporada en 2024 con expecatativas altas tras el éxito de la primera. Nuevos talentos y viejos conocidos se hicieron presentes en la ya consolidada liga herediana.',
       scoreboard: {
         title: 'Tabla de Puntos',
-        description: 'Registro de puntuaciones y desempeño acumulado durante toda la temporada. Incluye el ranking final y el MVP de la temporada.',
+        description: 'La tabla de la segunda temporada contó con 107 competidores y el MVP fue Sebastián dejando una gran diferencia frente a ABC como segundo lugar.',
         images: ['images/tablas/t2.jpg', 'images/tablas/mvp2.jpg']
       },
       champions: [
@@ -70,47 +70,38 @@ function App() {
     {
       id: 'season3',
       title: 'Temporada 3',
-      description: 'Una temporada de oro marcada por batallas memorables y el surgimiento de nuevos talentos. El evento consolidó su posición como uno de los más importantes.',
+      description: 'La tercera temporada de Bronx llevada a cabo en 2025 redujo su cantidad de fechas, dejando una metodología más simple pero más competitiva, ya que las oportunidades de un campeonato eran cada vez menores para todos. En la tempoarada 3 vimos campeones nuevos, viejos conocidos y mucho nivel.',
       scoreboard: {
         title: 'Tabla de Puntos',
-        description: 'Registro de puntuaciones y desempeño acumulado durante toda la temporada. Incluye el ranking final y el MVP de la temporada.',
-        images: ['images/s3-scoreboard1.jpg', 'images/s3-scoreboard2.jpg']
+        description: 'La tabla de la tercera temporada contó con 120 competidores y el MVP fue PST tras una corta diferencia frente a Lozz.',
+        images: ['images/tablas/t3.webp', 'images/tablas/mvp3.png']
       },
       champions: [
-        { name: '1', date: '2023', description: 'Ganador', image: 'images/s3-1.jpg' },
-        { name: '2', date: '2023', description: 'Participante', image: 'images/s3-2.jpg' },
-        { name: '3', date: '2023', description: 'Participante', image: 'images/s3-3.jpg' },
-        { name: '4', date: '2023', description: 'Participante', image: 'images/s3-4.jpg' },
-        { name: '5', date: '2023', description: 'Participante', image: 'images/s3-5.jpg' },
-        { name: '6', date: '2023', description: 'Participante', image: 'images/s3-6.jpg' },
-        { name: '7', date: '2023', description: 'Participante', image: 'images/s3-7.jpg' },
-        { name: '8', date: '2023', description: 'Participante', image: 'images/s3-8.jpg' },
-        { name: '9', date: '2023', description: 'Participante', image: 'images/s3-9.jpg' },
-        { name: '10', date: '2023', description: 'Participante', image: 'images/s3-10.jpg' },
-        { name: '11', date: '2023', description: 'Participante', image: 'images/s3-11.jpg' }
+        { name: 'Fecha #1: Kamaño', date: '24-01-25', description: 'Kamaño asistió a Bronx por primera vez en 2025 y consiguió ganar la primera fecha tras vencer a ABC en la final.', image: 'images/temp3/s3-1.jpg' },
+        { name: 'Fecha #2: Lozz', date: '17-02-25', description: 'Lozz derrotó a Gerald en la final de la fecha 2, ganando nuevamente una Bronx en otra temporada.', image: 'images/temp3/s3-2.jpg' },
+        { name: 'Fecha #3: PST', date: '15-03-25', description: 'PST ganó la fecha 3 tras vencer a Guido en la final, este campeonato sentaba las bases para una temporada estelar para PST.', image: 'images/temp3/s3-3.jpg' },
+        { name: 'Fecha #4: Pegs & Xanty', date: '12-04-25', description: 'Pegs y Xanty vencieron a Nilo y Neo JRD en las duplas de la temporada 4, ganando Bronx por primera vez, aparte una dupla conformada por hermanos gemelos.', image: 'images/temp3/s3-4.jpg' },
+        { name: 'Fecha #5: White', date: '16-05-25', description: 'White logró su primera Bronx después de derrotar a Sebastián en la final.', image: 'images/temp3/s3-5.jpg' },
+        { name: 'Fecha #6: Low C', date: '20-06-25', description: 'Low C ganó su primera Bronx oficial en solitario en la temporada 3, tras vencer a Guido en la final.', image: 'images/temp3/s3-6.jpg' },
+        { name: 'Fecha #7: LTF', date: '11-07-25', description: 'LTF se proclamó campeón de su primera Bronx en solitario luego de vencer a Lozz en la final.', image: 'images/temp3/s3-7.jpg' },
+        { name: 'Fecha #8: PST', date: '15-08-25', description: 'PST ganó la fecha 8 tras vencer a Kamaño en la gran final de duplas random, siendo esta la dupla ganadora frente a ABC y Recom, dejando todo en el enfrentamiento final. Esta fecha le dio el primer bicampeonato de la temporada a PST', image: 'images/temp3/s3-8.jpg' },
+        { name: 'Fecha #9: Lozz', date: '19-09-25', description: 'Lozz salió campeón de esta fechas tras imponerse a Bragi, obteniendo el segundo bicampeonato de la temporada y poniendo en disputa el MVP de la temporada con PST.', image: 'images/temp3/s3-9.jpg' },
+        { name: 'Fecha #10: Dieciséis:', date: '25-10-25', description: 'Dieciséis dio la sorpresa ganandole a Xanty en la final de la fecha 10 y no dejó pasar la oportunidad de ser campeón de Bronx.', image: 'images/temp3/s3-10.jpg' },
+        { name: 'Fecha Last Bullet: ABC', date: '15-11-25', description: 'ABC vuelve a ganar en la última instancia, venciendo a Recom en la fecha Last Bullet igual que en la segunda temporada.', image: 'images/temp3/s3-11.jpg' },
+        { name: 'Campeón Nacional: PST', date: '15-12-24', description: 'PST se consolida como el campeón nacional de la tercera temporada tras vencer a Kamaño en la final. Tras haber perdido 2 finales nacionales, la tercera fue la vencida y pudo levantar el trofeo.', image: 'images/temp3/s3-12.png' }
       ]
     },
     {
       id: 'season4',
       title: 'Temporada 4',
-      description: 'La temporada más reciente con innovaciones en formato y participación masiva. Continúa la tradición de excelencia y entretenimiento de las Bronx 04.',
+      description: 'La cuarta temporada de Bronx iniciada en 2026, con un nombre ya consolidado como la élite de Costa Rica.',
       scoreboard: {
         title: 'Tabla de Puntos',
-        description: 'Registro de puntuaciones y desempeño acumulado durante toda la temporada. Incluye el ranking final y el MVP de la temporada.',
+        description: 'En proceso. Líder actual: Deinsha',
         images: ['images/s4-scoreboard1.jpg', 'images/s4-scoreboard2.jpg']
       },
       champions: [
-        { name: '1', date: '2024', description: 'Ganador', image: 'images/s4-1.jpg' },
-        { name: '2', date: '2024', description: 'Participante', image: 'images/s4-2.jpg' },
-        { name: '3', date: '2024', description: 'Participante', image: 'images/s4-3.jpg' },
-        { name: '4', date: '2024', description: 'Participante', image: 'images/s4-4.jpg' },
-        { name: '5', date: '2024', description: 'Participante', image: 'images/s4-5.jpg' },
-        { name: '6', date: '2024', description: 'Participante', image: 'images/s4-6.jpg' },
-        { name: '7', date: '2024', description: 'Participante', image: 'images/s4-7.jpg' },
-        { name: '8', date: '2024', description: 'Participante', image: 'images/s4-8.jpg' },
-        { name: '9', date: '2024', description: 'Participante', image: 'images/s4-9.jpg' },
-        { name: '10', date: '2024', description: 'Participante', image: 'images/s4-10.jpg' },
-        { name: '11', date: '2024', description: 'Participante', image: 'images/s4-11.jpg' }
+        { name: 'Fecha #1: Deinsha', date: '17-01-26', description: 'Deinsha ganó la primera fecha de la temporada 4, consiguiendo su primer campeonato en Bronx tras derrotar a Gabriel desde Panamá.', image: 'images/temp4/s4-1.jpg' },
       ]
     },
      {
@@ -126,28 +117,24 @@ function App() {
       ]
     },
      {
-      id: 'sr',
+      id: 'pu',
       title: 'Promesa del Under',
-      description: 'Bronx se une al CPJ SRH tras una invitación para realizar clasificatorias al rededor de San Rafael de Heredia, donde uno solo seria el campeón.',
+      description: 'Este evento anual organizado por Bronx empezó en 2025, donde solo participan freestylers emergentes con poca experiencia en batallas oficiales y sin campeonatos previos.',
       champions: [
-        { name: 'Clasificatoria #1 - Jaffet', date: '07-05-23', description: 'Jaffet ganó la primera clasificatoria de Bronx SR derrotando a un Peggs que recien inicaba su carrera.', image: 'images/sanra/ss1-1.jpg' },
-        { name: 'Clasificatoria #3 - G', date: '03-06-23', description: 'G vence a Rincón en la final y se lleva la segunda clasificatoria.', image: 'images/sanra/ss1-2.jpg' },
-        { name: 'Clasificatoria #2 - G', date: '09-07-23', description: 'G marca su superioridad en estas clasificatorias y gana la tercera tras derrotar a RVS en la final. Regalándonos un duelo historico de campeones de Red Bull Costa Rica. ', image: 'images/sanra/ss1-3.png' },
-        { name: 'Clasificatoria #4 - G', date: '08-10-23', description: 'G nuevamente consigue ganar la clasificatoria esta vez derrotando a Lozz en la final', image: 'images/sanra/ss1-4.png' },
-        { name: 'Final SR - Sebastián', date: '29-10-23', description: 'Sebastián gana la final de Bronx SR derrotando a Lozz en la gran final ganando el privilegio de presentarse antes del cantante Toledo en su siguiente concierto en San Rafael.', image: 'images/sanra/ss1-5.jpg' }
+        { name: 'Promesa del Under I - Toño Master', date: '01-09-25', description: 'Toño Master se lleva el primer título de Promesa del Under, dejando de ser promesa y pasando a la lista de campeones.', image: 'images/promesa/sp-1.jpg' }
       ]
     },
      {
       id: 'bdm',
       title: 'BDM',
-      description: 'Batallas de Movimiento - Eventos especiales donde se enfrentan los mejores freestylers en formato de batalla directa.',
+      description: 'Batallas de Maestros (BDM) ues una competencia internacional de origen chileno que realizó una final nacional en Costa Rica con el fin de enviar un representante a la internacional. Bronx se encargó de 2 regionales que clasificaban alguien directo a la nacional.',
       champions: [
         { name: 'BDM Heredia - Low C', date: '15-09-23', description: 'Low C gana BDM Heredia 2023 contra Tatan, clasificando a la final nacional que se haria en Costa Rica ese año. Esta regional fue organizada por Bronx y el primer titulo de Low C en esta organización.', image: 'images/especial/bdm/bdm1.jpg' },
         { name: 'BDM Last Bullet - Eros EQ', date: '10-11-23', description: 'El último chance para clasificar a la final nacional de BDM 2023 se organizó por Bronx. Eros se impuso ante LTF y se llevó este cupo. (LL23 perdió con Tao ese día). xd', image: 'images/especial/bdm/bdm2.jpg' }
       ]
     },
      {
-      id: 'sr',
+      id: 'fn',
       title: 'Finales Nacionales',
       description: 'La temporada más reciente con innovaciones en formato y participación masiva. Continúa la tradición de excelencia y entretenimiento de las Bronx 04.',
       champions: [
