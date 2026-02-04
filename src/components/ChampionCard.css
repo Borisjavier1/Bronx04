@@ -113,12 +113,11 @@
 
 /* SOLO PARA FN */
 .champion-image-container.fn-size {
-  width: 820px;
-  height: 615px;
-  max-width: none;
-  aspect-ratio: auto;
+    width: 100%;           /* Se adapta al ancho del celular */
+    max-width: 820px;      /* No crecerá más de 820px en PC */
+    height: auto;          /* Evita que se deforme */
+    aspect-ratio: 820 / 615; /* Mantiene la proporción original de FN */
 }
-
 /* IMAGEN */
 .champion-image {
   width: 100%;
