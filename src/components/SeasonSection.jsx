@@ -5,6 +5,11 @@ import ImageCarousel from './ImageCarousel'
 
 function SeasonSection({ season, isExpanded, onToggle }) {
   const [scoreboardExpanded, setScoreboardExpanded] = useState(false)
+  const DEFAULT_TITLE = 'Campeones'
+  const SEASON_TITLES = {
+    special: 'Eventos',
+    fn: 'Ediciones',
+  }
 
   return (
     <div className={`season-section ${isExpanded ? 'expanded' : ''}`}>
@@ -12,19 +17,21 @@ function SeasonSection({ season, isExpanded, onToggle }) {
         <h2>{season.title}</h2>
         <span className="toggle-icon">{isExpanded ? '▼' : '▶'}</span>
       </button>
+      
 
       {isExpanded && (
         <div className="season-content">
           <p className="description">{season.description}</p>
           
           <div className="champions-section">
-            <h3>Campeones</h3>
+            <h3>{SEASON_TITLES[season.id] ?? DEFAULT_TITLE}</h3>
             <div className="champions-list">
               {season.champions.map((champion, index) => (
                 <ChampionCard
                   key={index}
                   champion={champion}
                   position={index + 1}
+                  seasonId={season.id}
                 />
               ))}
             </div>
@@ -45,7 +52,8 @@ function SeasonSection({ season, isExpanded, onToggle }) {
                   {season.scoreboard.description && (
                     <p className="scoreboard-description">{season.scoreboard.description}</p>
                   )}
-                  <ImageCarousel images={season.scoreboard.images} />
+                  <ImageCarousel images={season.scoreboard.images}
+                                 seasonId={season.id} />
                 </div>
               )}
             </div>

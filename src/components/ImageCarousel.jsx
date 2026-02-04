@@ -1,20 +1,24 @@
 import { useState } from 'react'
 import './ImageCarousel.css'
 
-function ImageCarousel({ images }) {
+function ImageCarousel({ images, seasonId }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   if (!images || images.length === 0) {
     return null
   }
+  
+  const isFn = seasonId === 'fn'
+console.log('isFn:', seasonId)
+
 
   // Si solo hay una imagen, mostrarla sin carousel
   if (images.length === 1) {
     return (
-      <div className="champion-image-container">
-        <img 
-          src={images[0]} 
-          alt="Imagen" 
+      <div className={`champion-image-container ${isFn ? 'fn-size' : ''}`}>
+        <img
+          src={images[0]}
+          alt="Imagen"
           className="champion-image"
         />
       </div>

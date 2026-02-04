@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import SeasonSection from './components/SeasonSection'
+import { FN_DESCRIPTIONS } from './sesasonDescription.js';
+
 
 function App() {
   const [expandedSeason, setExpandedSeason] = useState(null)
@@ -88,7 +90,7 @@ function App() {
         { name: 'Fecha #9: Lozz', date: '19-09-25', description: 'Lozz salió campeón de esta fechas tras imponerse a Bragi, obteniendo el segundo bicampeonato de la temporada y poniendo en disputa el MVP de la temporada con PST.', image: 'images/temp3/s3-9.jpg' },
         { name: 'Fecha #10: Dieciséis:', date: '25-10-25', description: 'Dieciséis dio la sorpresa ganandole a Xanty en la final de la fecha 10 y no dejó pasar la oportunidad de ser campeón de Bronx.', image: 'images/temp3/s3-10.jpg' },
         { name: 'Fecha Last Bullet: ABC', date: '15-11-25', description: 'ABC vuelve a ganar en la última instancia, venciendo a Recom en la fecha Last Bullet igual que en la segunda temporada.', image: 'images/temp3/s3-11.jpg' },
-        { name: 'Campeón Nacional: PST', date: '15-12-24', description: 'PST se consolida como el campeón nacional de la tercera temporada tras vencer a Kamaño en la final. Tras haber perdido 2 finales nacionales, la tercera fue la vencida y pudo levantar el trofeo.', image: 'images/temp3/s3-12.png' }
+        { name: 'Campeón Nacional: PST', date: '15-12-25', description: 'PST se consolida como el campeón nacional de la tercera temporada tras vencer a Kamaño en la final. Tras haber perdido 2 finales nacionales, la tercera fue la vencida y pudo levantar el trofeo.', image: 'images/temp3/s3-12.png' }
       ]
     },
     {
@@ -136,29 +138,23 @@ function App() {
      {
       id: 'fn',
       title: 'Finales Nacionales',
-      description: 'La temporada más reciente con innovaciones en formato y participación masiva. Continúa la tradición de excelencia y entretenimiento de las Bronx 04.',
+      description: 'Las finales nacionales de Bronx marcan el fin de una temporada. Se reunen los mejores freestylers del país para disputar el título más importante de la competencia, recibiendo el premio mayor y el máximo prestigio otorgado por Bronx.',
       champions: [
-        { name: 'Clasificatoria #1 - Jaffet', date: '07-05-23', description: 'Ganador', image: 'images/sanra/ss1-1.jpg' },
-        { name: 'Clasificatoria #2 - G', date: '03-06-23', description: 'Participante', image: 'images/sanra/ss1-2.png' },
-        { name: 'Clasificatoria #3 - G', date: '09-07-23', description: 'Participante', image: 'images/sanra/ss1-3.jpg' },
-        { name: 'Clasificatoria #4 - G', date: '08-10-23', description: 'Participante', image: 'images/sanra/ss1-4.png' },
-        { name: 'Final SR - Sebastián', date: '29-10-23', description: 'Participante', image: 'images/sanra/ss1-5.jpg' }
+        { name: 'Final Nacional 2021', date: '12-12-21', description: FN_DESCRIPTIONS.fn2021, image: 'images/nacionales/fn0.png' },
+        { name: 'Final Nacional 2023', date: '06-08-23', description: FN_DESCRIPTIONS.fn2023, image: 'images/nacionales/fn1.jpg' },
+        { name: 'Final Nacional 2024', date: '16-12-24', description: FN_DESCRIPTIONS.fn2024, image: 'images/nacionales/fn2.jpg' },
+        { name: 'Final Nacional 2025', date: '15-12-25', description: FN_DESCRIPTIONS.fn2025, image: 'images/nacionales/fn3.webp' },
+        { name: 'Final Nacional SR', date: '29-10-23', description: FN_DESCRIPTIONS.fnsr, image: 'images/nacionales/fnsr.jpg' }
       ]
     },
     {
       id: 'special',
       title: 'Eventos Especiales',
-      description: 'Eventos extraordinarios incluyendo batallas sorpresa, torneos de invitados y celebraciones especiales que marcan momentos memorables en la historia de Bronx 04.',
+      description: 'Bronx realiza algunos eventos externos como contratados o patrocinios.',
       champions: [
-        { name: '3', date: '2024', description: 'Evento especial', images: ['images/special3.jpg', 'images/special4.jpg'] },
-        { name: '4', date: '2024', description: 'Evento especial', image: 'images/special4.jpg' },
-        { name: '5', date: '2024', description: 'Evento especial', images: ['images/special5.jpg', 'images/special6.jpg', 'images/special7.jpg', 'images/special8.jpg'] },
-        { name: '6', date: '2024', description: 'Evento especial', image: 'images/special6.jpg' },
-        { name: '7', date: '2024', description: 'Evento especial', images: ['images/special7.jpg', 'images/special8.jpg'] },
-        { name: '8', date: '2024', description: 'Evento especial', image: 'images/special8.jpg' },
-        { name: '9', date: '2024', description: 'Evento especial', images: ['images/special9.jpg', 'images/special10.jpg', 'images/special11.jpg'] },
-        { name: '10', date: '2024', description: 'Evento especial', image: 'images/special10.jpg' },
-        { name: '11', date: '2024', description: 'Evento especial', image: 'images/special11.jpg' }
+        { name: 'Garage 28', date: '09-02-25', description: 'Bronx 04 con la participación de ABC realizaronn un video promocional del negocio de Heredia, Garage 28.', image: 'images/especial/promos/1.jpeg', video: 'https://vt.tiktok.com/ZSaWD8RXd/' },
+        { name: 'Costa Rasta', date: '05-05-25', description: 'Bronx 04 relalizó un video promocional en la tienda de Heredia Costa Rasta junto a: LL23, Elian y Deinsha.', image: 'images/especial/promos/2.jpeg', video: 'https://vt.tiktok.com/ZSaWDXp6W/' },
+        { name: 'Concierto de Gimario', date: '31-01-26', description: 'Bronx realizo unas batallas de exhibición en el concierto de Gimario en el Domo de San Rafael de Heredia. <br/>Las batallas fueron:<br/> Kharma vs M00syx<br/>LVZ vs LL23<br/>Recom vs LTF<br/>Peggs & Xanty vs Jap & Cap (Coestelar)<br/>ABC vs Sebastián (Estelar) ', images: ['images/especial/promos/g1.jpeg', 'images/especial/promos/g2.jpeg' , 'images/especial/promos/g3.jpeg'] },
       ]
     }
   ]

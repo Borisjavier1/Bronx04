@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './ChampionCard.css'
 import ImageCarousel from './ImageCarousel'
 
-function ChampionCard({ champion, position }) {
+function ChampionCard({ champion, position, seasonId }) {
   const [isExpanded, setIsExpanded] = useState(false)
 
   // Normalizar las imágenes: convertir image singular a array images
@@ -24,8 +24,21 @@ function ChampionCard({ champion, position }) {
           {champion.date && (
             <p className="champion-date">Fecha de publicación: {champion.date}</p>
           )}
-          <p className="champion-description">{champion.description}</p>
-          <ImageCarousel images={images} />
+          <p
+            className="champion-description"
+            dangerouslySetInnerHTML={{ __html: champion.description }}
+          />
+          {champion.video && (
+            <a
+              href={champion.video}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver video 🎥
+            </a>
+          )}
+          <ImageCarousel images={images}
+                         seasonId={seasonId} />
         </div>
       )}
     </div>
