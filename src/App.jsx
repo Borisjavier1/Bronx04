@@ -99,11 +99,15 @@ function App() {
       description: 'La cuarta temporada de Bronx iniciada en 2026, con un nombre ya consolidado como la élite de Costa Rica.',
       scoreboard: {
         title: 'Tabla de Puntos',
-        description: 'En proceso. Líder actual: Deinsha',
+        description: 'En proceso. Líder actual: A1',
         images: ['images/s4-scoreboard1.jpg', 'images/s4-scoreboard2.jpg']
       },
       champions: [
         { name: 'Fecha #1: Deinsha', date: '17-01-26', description: 'Deinsha ganó la primera fecha de la temporada 4, consiguiendo su primer campeonato en Bronx tras derrotar a Gabriel desde Panamá.', image: 'images/temp4/s4-1.jpg' },
+        { name: 'Fecha #2: Nino Vicente', date: '22-02-26', description: 'Nino Vicente ganó la segunda fecha de la temporada 4 venciendo a Sebastián, esta fue la primera regional del año, la cual se llevó a cabo en Cartago.', image: 'images/temp4/s4-2.jpeg' },
+        { name: 'Fecha #3: LTF', date: '14-03-26', description: 'LTF ganó la tercera fecha de la temporada, venciendo a LL23 en la final. LTF sumó su tercera Bronx tras esta fecha.', image: 'images/temp4/s4-3.jpeg' },
+        { name: 'Fecha #4: PST & Estban', date: '18-04-26', description: 'PST y Estban ganaron las duplas de la cuarta temporada en una final contra ABC & Little John. Esta fecha hizo historia y rompió récord de asistencia en Bronx, registrando 64 competidores en formato 2 vs 2.', image: 'images/temp4/s4-4.jpeg' },
+
       ]
     },
      {
