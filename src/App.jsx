@@ -1,11 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import HeroSection from './components/HeroSection'
 import SeasonSection from './components/SeasonSection'
 import { FN_DESCRIPTIONS } from './sesasonDescription.js';
 
 
 function App() {
   const [expandedSeason, setExpandedSeason] = useState(null)
+  
+  const handleToggleSeason = (seasonId) => {
+    setExpandedSeason(expandedSeason === seasonId ? null : seasonId)
+  }
 
   const seasons = [
     {
@@ -179,22 +184,20 @@ function App() {
 
   return (
     <div className="app">
-      <header className="header">
-        <div className="header-content">
-          <img src={base + 'images/logobronx.png'} alt="Bronx 04 Logo" className="logo-image" />
-          <h1>BRONX 04</h1>
-        </div>
-        <p className="tagline">El Freestyle de Heredia</p>
-      </header>
+      <HeroSection />
 
       <main className="main-content">
+        <div className="sections-header">
+          <h2>Temporadas y Eventos</h2>
+          <p>Explora todas las temporadas de Bronx 04</p>
+        </div>
         <div className="seasons-container">
           {seasonsWithBase.map(season => (
             <SeasonSection
               key={season.id}
               season={season}
               isExpanded={expandedSeason === season.id}
-              onToggle={() => setExpandedSeason(expandedSeason === season.id ? null : season.id)}
+              onToggle={() => handleToggleSeason(season.id)}
             />
           ))}
         </div>

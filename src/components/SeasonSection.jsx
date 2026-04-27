@@ -5,10 +5,16 @@ import ImageCarousel from './ImageCarousel'
 
 function SeasonSection({ season, isExpanded, onToggle }) {
   const [scoreboardExpanded, setScoreboardExpanded] = useState(false)
+  const [expandedChampionIndex, setExpandedChampionIndex] = useState(null)
+  
   const DEFAULT_TITLE = 'Campeones'
   const SEASON_TITLES = {
     special: 'Eventos',
     fn: 'Ediciones',
+  }
+
+  const handleChampionToggle = (index) => {
+    setExpandedChampionIndex(expandedChampionIndex === index ? null : index)
   }
 
   return (
@@ -28,10 +34,12 @@ function SeasonSection({ season, isExpanded, onToggle }) {
             <div className="champions-list">
               {season.champions.map((champion, index) => (
                 <ChampionCard
-                  key={index}
+                  key={`${season.id}-${index}-${champion.name}`}
                   champion={champion}
                   position={index + 1}
                   seasonId={season.id}
+                  isExpanded={expandedChampionIndex === index}
+                  onToggle={() => handleChampionToggle(index)}
                 />
               ))}
             </div>
