@@ -117,12 +117,37 @@ export default function WinnersChart({ seasons = [] }) {
     ],
   }
 
+  // Plugin para mostrar valores en las barras
+  const dataLabelsPlugin = {
+    id: 'datalabels',
+    afterDatasetsDraw(chart) {
+      const { ctx, chartArea } = chart
+      chart.data.datasets.forEach((dataset, i) => {
+        const meta = chart.getDatasetMeta(i)
+        meta.data.forEach((element, index) => {
+          const data = dataset.data[index]
+          const { x, y, width, height } = element.getProps(['x', 'y', 'width', 'height'])
+          
+          ctx.font = 'bold 12px Arial'
+          ctx.fillStyle = '#000'
+          ctx.textAlign = 'left'
+          ctx.textBaseline = 'middle'
+          
+          // Mostrar número al lado derecho de la barra
+          const text = data.toString()
+          ctx.fillText(text, x + 8, y)
+        })
+      })
+    },
+  }
+
   const options = {
     indexAxis: 'y',
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
+      datalabels: { display: true },
       tooltip: {
         backgroundColor: 'rgba(0, 0, 0, 0.8)',
         padding: 12,
@@ -163,7 +188,12 @@ export default function WinnersChart({ seasons = [] }) {
             Total de victorias por freestyler en las temporadas 1, 2, 3, 4, BDM y Bronx SR.
           </p>
           <div className="winners-chart-container">
-            <Bar ref={chartRef} data={chartData} options={options} />
+            <Bar 
+              ref={chartRef} 
+              data={chartData} 
+              options={options}
+              plugins={[dataLabelsPlugin]}
+            />
           </div>
         </div>
       )}
