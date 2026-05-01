@@ -1,0 +1,45 @@
+.winners-section {
+  margin-bottom: 16px;
+}
+
+.winners-chart-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+.winners-chart-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tamaño grande - como imagen */
+.season-content .winners-chart-container {
+  height: auto;
+  min-height: 600px;
+  width: 100%;
+}
+
+.season-content .winners-chart-container > div {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .winners-chart-container {
+    padding: 16px 12px;
+    min-height: 400px;
+  }
+
+  .season-content .winners-chart-container {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .season-content .winners-chart-container {
+    min-height: 300px;
+  }
+}

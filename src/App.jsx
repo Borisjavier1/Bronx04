@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import HeroSection from './components/HeroSection'
 import SeasonSection from './components/SeasonSection'
+import WinnersChart from './components/WinnersChart'
 import { FN_DESCRIPTIONS } from './sesasonDescription.js';
 
 
@@ -93,7 +94,7 @@ function App() {
         { name: 'Fecha #7: LTF', date: '11-07-25', description: 'LTF se proclamó campeón de su primera Bronx en solitario luego de vencer a Lozz en la final.', image: 'images/temp3/s3-7.jpg' },
         { name: 'Fecha #8: PST', date: '15-08-25', description: 'PST ganó la fecha 8 tras vencer a Kamaño en la gran final de duplas random, siendo esta la dupla ganadora frente a ABC y Recom, dejando todo en el enfrentamiento final. Esta fecha le dio el primer bicampeonato de la temporada a PST', image: 'images/temp3/s3-8.jpg' },
         { name: 'Fecha #9: Lozz', date: '19-09-25', description: 'Lozz salió campeón de esta fechas tras imponerse a Bragi, obteniendo el segundo bicampeonato de la temporada y poniendo en disputa el MVP de la temporada con PST.', image: 'images/temp3/s3-9.jpg' },
-        { name: 'Fecha #10: Dieciséis:', date: '25-10-25', description: 'Dieciséis dio la sorpresa ganandole a Xanty en la final de la fecha 10 y no dejó pasar la oportunidad de ser campeón de Bronx.', image: 'images/temp3/s3-10.jpg' },
+        { name: 'Fecha #10: Dieciséis', date: '25-10-25', description: 'Dieciséis dio la sorpresa ganandole a Xanty en la final de la fecha 10 y no dejó pasar la oportunidad de ser campeón de Bronx.', image: 'images/temp3/s3-10.jpg' },
         { name: 'Fecha Last Bullet: ABC', date: '15-11-25', description: 'ABC vuelve a ganar en la última instancia, venciendo a Recom en la fecha Last Bullet igual que en la segunda temporada.', image: 'images/temp3/s3-11.jpg' },
         { name: 'Campeón Nacional: PST', date: '15-12-25', description: 'PST se consolida como el campeón nacional de la tercera temporada tras vencer a Kamaño en la final. Tras haber perdido 2 finales nacionales, la tercera fue la vencida y pudo levantar el trofeo.', image: 'images/temp3/s3-12.png' }
       ]
@@ -120,11 +121,11 @@ function App() {
       title: 'Bronx SR',
       description: 'Bronx se une al CPJ SRH tras una invitación para realizar clasificatorias al rededor de San Rafael de Heredia, donde uno solo seria el campeón.',
       champions: [
-        { name: 'Clasificatoria #1 - Jaffet', date: '07-05-23', description: 'Jaffet ganó la primera clasificatoria de Bronx SR derrotando a un Peggs que recien inicaba su carrera.', image: 'images/sanra/ss1-1.jpg' },
-        { name: 'Clasificatoria #2 - G', date: '03-06-23', description: 'G vence a Rincón en la final y se lleva la segunda clasificatoria.', image: 'images/sanra/ss1-2.png' },
-        { name: 'Clasificatoria #3 - G', date: '09-07-23', description: 'G marca su superioridad en estas clasificatorias y gana la tercera tras derrotar a RVS en la final. Regalándonos un duelo historico de campeones de Red Bull Costa Rica. ', image: 'images/sanra/ss1-3.jpg' },
-        { name: 'Clasificatoria #4 - G', date: '08-10-23', description: 'G nuevamente consigue ganar la clasificatoria esta vez derrotando a Lozz en la final', image: 'images/sanra/ss1-4.png' },
-        { name: 'Final SR - Sebastián', date: '29-10-23', description: 'Sebastián gana la final de Bronx SR derrotando a Lozz en la gran final ganando el privilegio de presentarse antes del cantante Toledo en su siguiente concierto en San Rafael.', image: 'images/sanra/ss1-5.jpg' }
+        { name: 'Clasificatoria #1: Jaffet', date: '07-05-23', description: 'Jaffet ganó la primera clasificatoria de Bronx SR derrotando a un Peggs que recien inicaba su carrera.', image: 'images/sanra/ss1-1.jpg' },
+        { name: 'Clasificatoria #2: G', date: '03-06-23', description: 'G vence a Rincón en la final y se lleva la segunda clasificatoria.', image: 'images/sanra/ss1-2.png' },
+        { name: 'Clasificatoria #3: G', date: '09-07-23', description: 'G marca su superioridad en estas clasificatorias y gana la tercera tras derrotar a RVS en la final. Regalándonos un duelo historico de campeones de Red Bull Costa Rica. ', image: 'images/sanra/ss1-3.jpg' },
+        { name: 'Clasificatoria #4: G', date: '08-10-23', description: 'G nuevamente consigue ganar la clasificatoria esta vez derrotando a Lozz en la final', image: 'images/sanra/ss1-4.png' },
+        { name: 'Final SR: Sebastián', date: '29-10-23', description: 'Sebastián gana la final de Bronx SR derrotando a Lozz en la gran final ganando el privilegio de presentarse antes del cantante Toledo en su siguiente concierto en San Rafael.', image: 'images/sanra/ss1-5.jpg' }
       ]
     },
      {
@@ -132,7 +133,7 @@ function App() {
       title: 'Promesa del Under',
       description: 'Este evento anual organizado por Bronx empezó en 2025, donde solo participan freestylers emergentes con poca experiencia en batallas oficiales y sin campeonatos previos.',
       champions: [
-        { name: 'Promesa del Under I - Toño Master', date: '01-09-25', description: 'Toño Master se lleva el primer título de Promesa del Under, dejando de ser promesa y pasando a la lista de campeones.', image: 'images/promesa/sp-1.jpg' }
+        { name: 'Promesa del Under I: Toño Master', date: '01-09-25', description: 'Toño Master se lleva el primer título de Promesa del Under, dejando de ser promesa y pasando a la lista de campeones.', image: 'images/promesa/sp-1.jpg' }
       ]
     },
      {
@@ -140,8 +141,8 @@ function App() {
       title: 'BDM',
       description: 'Batallas de Maestros (BDM) ues una competencia internacional de origen chileno que realizó una final nacional en Costa Rica con el fin de enviar un representante a la internacional. Bronx se encargó de 2 regionales que clasificaban alguien directo a la nacional.',
       champions: [
-        { name: 'BDM Heredia - Low C', date: '15-09-23', description: 'Low C gana BDM Heredia 2023 contra Tatan, clasificando a la final nacional que se haria en Costa Rica ese año. Esta regional fue organizada por Bronx y el primer titulo de Low C en esta organización.', image: 'images/especial/bdm/bdm1.jpg' },
-        { name: 'BDM Last Bullet - Eros EQ', date: '10-11-23', description: 'El último chance para clasificar a la final nacional de BDM 2023 se organizó por Bronx. Eros se impuso ante LTF y se llevó este cupo. (LL23 perdió con Tao ese día). xd', image: 'images/especial/bdm/bdm2.jpg' }
+        { name: 'BDM Heredia: Low C', date: '15-09-23', description: 'Low C gana BDM Heredia 2023 contra Tatan, clasificando a la final nacional que se haria en Costa Rica ese año. Esta regional fue organizada por Bronx y el primer titulo de Low C en esta organización.', image: 'images/especial/bdm/bdm1.jpg' },
+        { name: 'BDM Last Bullet: Eros EQ', date: '10-11-23', description: 'El último chance para clasificar a la final nacional de BDM 2023 se organizó por Bronx. Eros se impuso ante LTF y se llevó este cupo. (LL23 perdió con Tao ese día). xd', image: 'images/especial/bdm/bdm2.jpg' }
       ]
     },
      {
@@ -149,11 +150,11 @@ function App() {
       title: 'Finales Nacionales',
       description: 'Las finales nacionales de Bronx marcan el fin de una temporada. Se reunen los mejores freestylers del país para disputar el título más importante de la competencia, recibiendo el premio mayor y el máximo prestigio otorgado por Bronx.',
       champions: [
-        { name: 'Final Nacional 2021', date: '12-12-21', description: FN_DESCRIPTIONS.fn2021, image: 'images/nacionales/fn0.png' },
-        { name: 'Final Nacional 2023', date: '06-08-23', description: FN_DESCRIPTIONS.fn2023, image: 'images/nacionales/fn1.jpg' },
-        { name: 'Final Nacional 2024', date: '16-12-24', description: FN_DESCRIPTIONS.fn2024, image: 'images/nacionales/fn2.jpg' },
-        { name: 'Final Nacional 2025', date: '15-12-25', description: FN_DESCRIPTIONS.fn2025, image: 'images/nacionales/fn3.webp' },
-        { name: 'Final Nacional SR', date: '29-10-23', description: FN_DESCRIPTIONS.fnsr, image: 'images/nacionales/fnsr.jpg' }
+        { name: 'Final Nacional 2021', date: '12-12-21', description: FN_DESCRIPTIONS.fn2021, image: 'images/nacionales/fn0.png', campeon: 'Zadiyk' },
+        { name: 'Final Nacional 2023', date: '06-08-23', description: FN_DESCRIPTIONS.fn2023, image: 'images/nacionales/fn1.jpg', campeon: 'Lozz' },
+        { name: 'Final Nacional 2024', date: '16-12-24', description: FN_DESCRIPTIONS.fn2024, image: 'images/nacionales/fn2.jpg', campeon: 'Kenyari' },
+        { name: 'Final Nacional 2025', date: '15-12-25', description: FN_DESCRIPTIONS.fn2025, image: 'images/nacionales/fn3.webp', campeon: 'PST' },
+        { name: 'Final Nacional SR', date: '29-10-23', description: FN_DESCRIPTIONS.fnsr, image: 'images/nacionales/fnsr.jpg', campeon: '' }
       ]
     },
     {
@@ -200,6 +201,7 @@ function App() {
               onToggle={() => handleToggleSeason(season.id)}
             />
           ))}
+          <WinnersChart seasons={seasonsWithBase} />
         </div>
       </main>
 
