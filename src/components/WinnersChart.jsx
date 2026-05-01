@@ -135,7 +135,7 @@ export default function WinnersChart({ seasons = [] }) {
           
           // Mostrar número al lado derecho de la barra
           const text = data.toString()
-          ctx.fillText(text, x + 8, y)
+          //ctx.fillText(text, x + 8, y)
         })
       })
     },

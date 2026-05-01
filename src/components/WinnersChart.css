@@ -40,6 +40,6 @@
 
 @media (max-width: 480px) {
   .season-content .winners-chart-container {
-    min-height: 600px;
+    min-height: 1000px;
   }
 }
