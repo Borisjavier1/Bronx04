@@ -30,16 +30,16 @@
 @media (max-width: 768px) {
   .winners-chart-container {
     padding: 16px 12px;
-    min-height: 400px;
+    min-height: 800px;
   }
 
   .season-content .winners-chart-container {
-    min-height: 400px;
+    min-height: 800px;
   }
 }
 
 @media (max-width: 480px) {
   .season-content .winners-chart-container {
-    min-height: 300px;
+    min-height: 600px;
   }
 }
