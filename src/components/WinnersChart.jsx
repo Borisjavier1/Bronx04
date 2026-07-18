@@ -49,7 +49,7 @@ function parseNames(nameStr) {
 }
 
 export default function WinnersChart({ seasons = [] }) {
-  const [isExpanded, setIsExpanded] = useState(true)
+  const [isExpanded, setIsExpanded] = useState(false)
   const chartRef = useRef(null)
 
   const data = useMemo(() => {

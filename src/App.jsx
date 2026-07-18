@@ -113,6 +113,9 @@ function App() {
         { name: 'Fecha #2: Nino Vicente', date: '22-02-26', description: 'Nino Vicente ganó la segunda fecha de la temporada 4 venciendo a Sebastián, esta fue la primera regional del año, la cual se llevó a cabo en Cartago.', image: 'images/temp4/s4-2.jpeg' },
         { name: 'Fecha #3: LTF', date: '14-03-26', description: 'LTF ganó la tercera fecha de la temporada, venciendo a LL23 en la final. LTF sumó su tercera Bronx tras esta fecha.', image: 'images/temp4/s4-3.jpeg' },
         { name: 'Fecha #4: PST & Estban', date: '18-04-26', description: 'PST y Estban ganaron las duplas de la cuarta temporada en una final contra ABC & Little John. Esta fecha hizo historia y rompió récord de asistencia en Bronx, registrando 64 competidores en formato 2 vs 2.', image: 'images/temp4/s4-4.jpeg' },
+        { name: 'Fecha #5: Deinsha', date: '24-05-26', description: 'Deinsha ganó la quinta fecha de la temporada 4, consiguiendo su segundo campeonato en Bronx. Esta fecha fue la regional de Alajuela, por lo que Deinsha logró clasificar de forma directa a la final nacional, derrotando a ABC en el proceso. ', image: 'images/temp4/s4-5.png' },
+        { name: 'Fecha #6: Yzzy', date: '20-06-26', description: 'Yzzy siendo uno de los old school heredianos, logró ganar su primer campeonato en Bronx en la fecha 6 de la temporada 4 tras vencer a Peggs en la final.', image: 'images/temp4/s4-6.jpeg'},
+        { name: 'Fecha #7: PST', date: '18-07-26', description: 'PST ganó la séptima fecha de la temporada 4 contra Elian, repitiendo la final de la fecha 2 temporada 2 pero esta vez el reusltado fue distinto. PST se proclama bicampeón.', image: 'images/temp4/s4-7.png'},
 
       ]
     },
