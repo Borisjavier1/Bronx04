@@ -105,7 +105,7 @@ function App() {
       description: 'La cuarta temporada de Bronx iniciada en 2026, con un nombre ya consolidado como la élite de Costa Rica.',
       scoreboard: {
         title: 'Tabla de Puntos',
-        description: 'En proceso. Líder actual: A1',
+        description: 'En proceso. Líder actual: Yzzy',
         images: ['images/s4-scoreboard1.jpg', 'images/s4-scoreboard2.jpg']
       },
       champions: [
@@ -116,7 +116,7 @@ function App() {
         { name: 'Fecha #5: Deinsha', date: '24-05-26', description: 'Deinsha ganó la quinta fecha de la temporada 4, consiguiendo su segundo campeonato en Bronx. Esta fecha fue la regional de Alajuela, por lo que Deinsha logró clasificar de forma directa a la final nacional, derrotando a ABC en el proceso. ', image: 'images/temp4/s4-5.jpg' },
         { name: 'Fecha #6: Yzzy', date: '20-06-26', description: 'Yzzy siendo uno de los old school heredianos, logró ganar su primer campeonato en Bronx en la fecha 6 de la temporada 4 tras vencer a Peggs en la final.', image: 'images/temp4/s4-6.jpg'},
         { name: 'Fecha #7: PST', date: '18-07-26', description: 'PST ganó la séptima fecha de la temporada 4 contra Elian, repitiendo la final de la fecha 2 temporada 2 pero esta vez el reusltado fue distinto. PST se proclama bicampeón.', image: 'images/temp4/s4-7.jpeg'},
-        { name: 'Fecha #8: G', date: '30-08-26', description: 'G ganó la octava fecha de la temporada 4, después de mucho tiempo volvió a sumar una Bronx esta vez en la regional San José tras derrotar a Estban.', image: 'images/temp4/s4-8.jpg' },
+        { name: 'Fecha #8: G', date: '30-08-26', description: 'G ganó la octava fecha de la temporada 4, después de mucho tiempo volvió a sumar una Bronx esta vez en la regional San José tras derrotar a Estban.', image: 'images/temp4/s4-8.jpeg' },
 
       ]
     },
