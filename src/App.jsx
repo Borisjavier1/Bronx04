@@ -117,7 +117,7 @@ function App() {
         { name: 'Fecha #6: Yzzy', date: '20-06-26', description: 'Yzzy siendo uno de los old school heredianos, logró ganar su primer campeonato en Bronx en la fecha 6 de la temporada 4 tras vencer a Peggs en la final.', image: 'images/temp4/s4-6.jpg'},
         { name: 'Fecha #7: PST', date: '18-07-26', description: 'PST ganó la séptima fecha de la temporada 4 contra Elian, repitiendo la final de la fecha 2 temporada 2 pero esta vez el reusltado fue distinto. PST se proclama bicampeón.', image: 'images/temp4/s4-7.jpeg'},
         { name: 'Fecha #8: G', date: '30-08-26', description: 'G ganó la octava fecha de la temporada 4, después de mucho tiempo volvió a sumar una Bronx esta vez en la regional San José tras derrotar a Estban.', image: 'images/temp4/s4-8.jpeg' },
-
+        { name: 'Fecha #9: C2', date: '19-09-26', description: 'C2 consigue ganar su primera Bronx en la temporada 4, venciendo a ABC en la final.', image: 'images/temp4/s4-9.jpeg' },
       ]
     },
      {
@@ -170,6 +170,7 @@ function App() {
         { name: 'Garage 28', date: '09-02-25', description: 'Bronx 04 con la participación de ABC realizaronn un video promocional del negocio de Heredia, Garage 28.', image: 'images/especial/promos/1.jpeg', video: 'https://vt.tiktok.com/ZSaWD8RXd/' },
         { name: 'Costa Rasta', date: '05-05-25', description: 'Bronx 04 relalizó un video promocional en la tienda de Heredia Costa Rasta junto a: LL23, Elian y Deinsha.', image: 'images/especial/promos/2.jpeg', video: 'https://vt.tiktok.com/ZSaWDXp6W/' },
         { name: 'Concierto de Gimario', date: '31-01-26', description: 'Bronx realizo unas batallas de exhibición en el concierto de Gimario en el Domo de San Rafael de Heredia. <br/>Las batallas fueron:<br/> Kharma vs M00syx<br/>LVZ vs LL23<br/>Recom vs LTF<br/>Peggs & Xanty vs Jap & Cap (Coestelar)<br/>ABC vs Sebastián (Estelar) ', images: ['images/especial/promos/g1.jpeg', 'images/especial/promos/g2.jpeg' , 'images/especial/promos/g3.jpeg'] },
+        { name: 'Bronx 04 vs ZHH', date: '06-09-26', winners: ['Tatan', 'ABC', 'PST', 'Yzzy'], description: 'Bronx 04 colaboró con ZHH en un evento especial y único, dejando grandes batallas en un formato multiverse. Los ganadores fueron el Team Bronx 04 conformado por Tatan, ABC, PST e Yzzy, tras vencer a White en la final.', image: 'images/especial/promos/g4.png'},
       ]
     }
   ]

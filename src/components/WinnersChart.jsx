@@ -55,15 +55,18 @@ export default function WinnersChart({ seasons = [] }) {
   const data = useMemo(() => {
     const map = {}
     
-    // Filtrar solo las temporadas relevantes (1, 2, 3, 4, bdm, sr)
+    // Filtrar las temporadas y eventos que cuentan para la estadística.
     const relevantSeasons = seasons.filter(s => 
-      ['season1', 'season2', 'season3', 'season4', 'bdm', 'sr'].includes(s.id)
+      ['season1', 'season2', 'season3', 'season4', 'bdm', 'sr', 'special'].includes(s.id)
     )
     
     relevantSeasons.forEach(season => {
       (season.champions || []).forEach(c => {
-        // Procesar el campo name
-        const names = parseNames(c.name)
+        // En eventos especiales solo cuentan las tarjetas con ganadores definidos.
+        if (season.id === 'special' && !c.winners) return
+
+        // Algunos eventos tienen ganadores explícitos que no aparecen en el título.
+        const names = c.winners || parseNames(c.name)
         names.forEach(n => {
           // Limpieza adicional
           const clean = n
